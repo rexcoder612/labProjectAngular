@@ -1,0 +1,32 @@
+<div class="container">
+  <h3 class="heading">Synonym Suggestion - Corti NLP</h3>
+  <form>
+    <div class="form-group d-flex patternInput">
+      <input class="form-control mr-1 patternInputField" placeholder="Add Pattern" name="pattern" [(ngModel)]="newIntent.pattern">
+      <button class="btn btn-primary synonymsBtn" (click)="synonymSuggestions(newIntent.pattern)">Synonyms</button>
+    </div>
+  </form>
+  <form>
+  <ul class="unorderedListSyn" *ngFor="let syn of arr; let i=index;">
+    <li class="displaySyn">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons" required>
+        <label class="btn yesBtn">
+          <input type="radio" name="options" class="yes hidden" id="option1"
+                 autocomplete="off" [checked]="syn" (click)="checkedYes(syn)">
+          YES
+        </label>
+        <label class="btn noBtn">
+          <input type="radio" name="options" class="no hidden" id="option2" autocomplete="off">NO
+        </label>
+      </div>
+      <span class="synList" name="synonyms">{{syn}}</span>
+    </li>
+  </ul>
+  <button type="submit" class="btn btn-success saveBtn" (click)="saveIntent()"
+          id="savePattern" routerLinkActive="active">Save</button>
+  </form>
+
+<div *ngIf="isVisible === false">
+  <app-display-table intent="storeIntent"></app-display-table>
+</div>
+</div>

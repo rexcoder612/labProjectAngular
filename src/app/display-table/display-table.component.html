@@ -1,0 +1,17 @@
+<div class="container">
+  <button class="btn btn-success" routerLink="/create">Back{{intent.pattern}}</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Pattern</th>
+        <th>Synonyms</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{intent.pattern}}</td>
+        <td *ngFor="let syn of intent.synonyms">{{syn}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

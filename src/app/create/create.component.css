@@ -1,0 +1,70 @@
+.heading{
+  margin-top: 20px;
+  font-family: cursive;
+  text-align: center;
+}
+
+.patternInput{
+  padding : 20px;
+  background: #cde5e8;
+  border: 1px solid #439dbb;
+  margin-top: 20px;
+}
+
+.patternInputField{
+  border: 1px solid #439dbb;
+}
+
+.synonymsBtn{
+  background: #439dbb;
+  border: 1px solid #439dbb;
+}
+
+li{
+  list-style-type: none;
+}
+
+.synList{
+  padding-left: 20px;
+}
+
+.unorderedListSyn{
+  margin-left: -40px;
+}
+
+.displaySyn{
+  //border: 1px solid #439dbb;
+  height: min-content;
+  padding: 10px;
+  background: #e1eff1;
+}
+
+.yesBtn{
+  background: #fff;
+  border: 1px solid #66b266;
+  height: min-content;
+}
+
+.yesBtn.active{
+  background: #66b266;
+  color: #fff;
+}
+
+.noBtn{
+  background: #fff;
+  border: 1px solid #ff6666;
+  height: min-content;
+}
+
+.noBtn.active{
+  background: #ff6666;
+  color: #fff;
+}
+
+.saveBtn{
+  margin: 0 auto;
+  display: block;
+  background: #439dbb;
+  border: 1px solid #439dbb;
+  width: 100px;
+}
